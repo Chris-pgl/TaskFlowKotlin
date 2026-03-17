@@ -77,7 +77,12 @@ fun CreateBizzCard(){ //Il Color in surface è solo per prova "sfondo della surf
                 .wrapContentHeight(),
                 horizontalAlignment = Alignment.CenterHorizontally) {
                 CreateImageProfile()
-                Divider(modifier = Modifier, thickness = 2.dp, color = Color.LightGray  )
+                Divider(thickness = 3.dp, color = Color.LightGray  )
+                CreateInfo()
+                Divider(thickness = 3.dp, color = Color.LightGray  )
+                Column(modifier = Modifier.padding(5.dp)) {
+
+                }
 
 
             }
@@ -94,7 +99,6 @@ fun CreateBizzCard(){ //Il Color in surface è solo per prova "sfondo della surf
 fun PreviewApp() {
     CreateBizzCard()
 }
-
 
 
 /**
@@ -120,4 +124,16 @@ fun CreateImageProfile(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop
         )
     }
+}
+
+@Composable
+fun CreateInfo(modifier: Modifier = Modifier){
+    Text(
+        text = "Chris P.",
+        style = MaterialTheme.typography.headlineMedium,
+        color = Color.Blue)
+    Text(
+        text = "Android Compose Programmer",
+        modifier = Modifier.padding(3.dp)
+    )
 }
