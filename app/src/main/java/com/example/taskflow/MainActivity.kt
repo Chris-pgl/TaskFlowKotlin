@@ -233,14 +233,14 @@ fun Portfolio(data: List<String>) {
         items(data){
                 item ->
             Card(modifier = Modifier
-                .padding(13.dp)
+                .padding(10.dp)
                 .fillMaxWidth(),
                 shape = RectangleShape,
                 elevation = CardDefaults.cardElevation(4.dp)) {
                 Row(modifier = Modifier
                     .padding(8.dp)
                     .background(MaterialTheme.colorScheme.surface).fillMaxWidth()
-                    .padding(7.dp)) {
+                    .padding(1.dp)) {
                     CreateImageProfile(modifier = Modifier.size(100.dp))
                     Column(modifier = Modifier.padding(7.dp).align(alignment = Alignment.CenterVertically)) {
                         Text(text = item, fontWeight = FontWeight.Bold)
