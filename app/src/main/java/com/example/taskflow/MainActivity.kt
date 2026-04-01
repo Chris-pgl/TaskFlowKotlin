@@ -154,7 +154,9 @@ fun CreateImageProfile(modifier: Modifier = Modifier) {
  * */
 @Composable
 fun CreateInfo(modifier: Modifier = Modifier) {
-    Column(modifier = Modifier) {
+    Column(modifier = Modifier.padding(5.dp),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally) {
         Text(
             text = "Chris P.",
             style = MaterialTheme.typography.headlineMedium,
