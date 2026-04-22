@@ -26,6 +26,7 @@ fun TaskCard(
 
     ) {
         //TODO sistemare il padding
+        //TODO sistemare anche la Home
         Row(
             modifier = Modifier.padding(16.dp)
         ) { }
