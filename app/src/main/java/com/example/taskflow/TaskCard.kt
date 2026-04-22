@@ -25,6 +25,7 @@ fun TaskCard(
             .padding(horizontal = 16.dp, vertical = 8.dp)
 
     ) {
+        //TODO sistemare il padding
         Row(
             modifier = Modifier.padding(16.dp)
         ) { }

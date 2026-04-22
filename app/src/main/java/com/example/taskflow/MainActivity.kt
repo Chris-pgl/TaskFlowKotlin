@@ -246,6 +246,7 @@ fun Portfolio(data: List<String>) {
                         Text(text = item, fontWeight = FontWeight.Bold)
                         Text(text = "My personal projects on GitHub", style = MaterialTheme.typography.bodySmall)
                         Text(text = "@Chris-pgl", fontWeight = FontWeight.Bold, style = MaterialTheme.typography.labelSmall)
+
                     }
                 }
             }
